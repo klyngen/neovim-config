@@ -60,3 +60,4 @@ let indentLine_char = '|'
 
 " Wildmenu
 set wildmode=list:longest
+set hidden

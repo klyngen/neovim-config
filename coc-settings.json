@@ -1,0 +1,11 @@
+{
+	"sql.database": "transactsql",
+	"sql.lintOnOpen": true,
+	"sql.lintOnSave": true,
+
+	"typescript.showUnused": true,
+	"typescript.suggest.autoImports": true,
+	"typescript.suggestionActions.enabled": true,
+	"typescript.implementationsCodeLens.enable": true
+}
+	

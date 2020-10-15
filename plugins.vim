@@ -43,7 +43,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'rhysd/vim-healthcheck'
 Plug 'Yggdroot/indentLine'
 Plug 'jiangmiao/auto-pairs'
-
+Plug 'ryanoasis/vim-devicons'
 if isdirectory('/usr/local/opt/fzf')
   Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
 else

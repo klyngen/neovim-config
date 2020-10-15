@@ -20,8 +20,12 @@ if filereadable(expand("~/.config/nvim/theme.vim"))
 endif
 "set runtimepath=~/.config/nvim/
 
+if filereadable(expand("~/.config/nvim/mappings.vim"))
+  source ~/.config/nvim/mappings.vim
+endif
 
 let g:session_autoload = 'no'
 let g:session_autosave = 'no'
+
 
 
