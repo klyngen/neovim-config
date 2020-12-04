@@ -31,8 +31,11 @@ call plug#begin(expand('~/.config/nvim/plugged'))
 "*****************************************************************************
 Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
+Plug 'ayu-theme/ayu-vim'
+Plug 'zefei/simple-dark'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
+Plug 'dunckr/vim-monokai-soda'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'

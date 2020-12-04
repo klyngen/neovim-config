@@ -1,12 +1,9 @@
 "" Background theme
 
-colorscheme papaya
+set termguicolors
 
-if (has("termguicolors"))
-	  set termguicolors
-endif
-
-
+let ayucolor="dark"
+colorscheme ayu
 
 "" CONFIGURE THE STARTIFY PLUGIN
 let g:startify_session_dir = '~/.config/nvim/session'
@@ -24,13 +21,12 @@ set mouse=a
 set number
 
 " vim-airline
-let g:airline_theme = 'luna'
+let g:airline_theme = 'jellybeans'
 let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#ale#enabled = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tagbar#enabled = 1
 let g:airline_skip_empty_sections = 1
-
 
 " vim-airline
 if !exists('g:airline_symbols')
@@ -53,10 +49,14 @@ highlight clear SignColumn
 
 
 " SET THE TAB LINE LIST
-let g:indentLine_char_list = ['|', '¦', '┆', '┊']
-let g:indentLine_enabled = 1
-let indentLine_char = '|'
+"let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+"let g:indentLine_enabled = 1
+"let indentLine_char = '|'
 
+let g:indentLine_showFirstIndentLevel = 1
+let g:indentLine_setColors = 0
+
+let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 
 " Wildmenu
 set wildmode=list:longest
