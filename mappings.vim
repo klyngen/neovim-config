@@ -11,5 +11,5 @@ map <F3> :Rg <CR>
 map <F4> :GFiles <CR>
 
 set ts=2
-set sts=2
+set shiftwidth=2
 set et

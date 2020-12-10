@@ -45,6 +45,7 @@ Plug 'HenryNewcomer/vim-theme-papaya'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'rhysd/vim-healthcheck'
 Plug 'Yggdroot/indentLine'
+Plug 'sheerun/vim-polyglot'
 Plug 'jiangmiao/auto-pairs'
 Plug 'ryanoasis/vim-devicons'
 if isdirectory('/usr/local/opt/fzf')
