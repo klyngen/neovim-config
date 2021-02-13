@@ -37,6 +37,10 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'dunckr/vim-monokai-soda'
 Plug 'vim-airline/vim-airline'
+Plug 'heavenshell/vim-jsdoc', { 
+  \ 'for': ['javascript', 'javascript.jsx','typescript'], 
+  \ 'do': 'make install'
+  \}
 Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
 Plug 'airblade/vim-rooter'
@@ -47,9 +51,15 @@ Plug 'rhysd/vim-healthcheck'
 Plug 'Yggdroot/indentLine'
 Plug 'sheerun/vim-polyglot'
 Plug 'jiangmiao/auto-pairs'
+
+" Golang stuff
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries'  } " Completion and stuff
+Plug 'sebdah/vim-delve'
+
+
 Plug 'ryanoasis/vim-devicons'
-if isdirectory('/usr/local/opt/fzf')
-  Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
+if isdirectory('/usr/bin/fzf')
+  Plug '/usr/bin/fzf' | Plug 'junegunn/fzf.vim'
 else
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
   Plug 'junegunn/fzf.vim'
@@ -75,6 +85,5 @@ Plug 'honza/vim-snippets'
 "*****************************************************************************
 "" Custom bundles
 "*****************************************************************************
-
 
 call plug#end()
