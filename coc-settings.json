@@ -6,6 +6,10 @@
 	"typescript.showUnused": true,
 	"typescript.suggest.autoImports": true,
 	"typescript.suggestionActions.enabled": true,
-	"typescript.implementationsCodeLens.enable": true
+	"typescript.implementationsCodeLens.enable": true,
+
+	"omnisharp.path": "~/.omnisharp/run"
+
+	
 }
 	
