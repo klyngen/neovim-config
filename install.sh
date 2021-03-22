@@ -1,4 +1,1 @@
-CONFDIR=~/.config/nvim/
-mkdir -p $CONFDIR
-cp *.vim $CONFDIR
-
+sudo dnf install nodejs ripgrep fzf

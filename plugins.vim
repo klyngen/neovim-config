@@ -38,6 +38,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'dunckr/vim-monokai-soda'
 Plug 'vim-airline/vim-airline'
 Plug 'OmniSharp/omnisharp-vim'
+Plug 'dense-analysis/ale'
 Plug 'heavenshell/vim-jsdoc', { 
   \ 'for': ['javascript', 'javascript.jsx','typescript'], 
   \ 'do': 'make install'

@@ -24,8 +24,6 @@ if filereadable(expand("~/.config/nvim/mappings.vim"))
   source ~/.config/nvim/mappings.vim
 endif
 
-let g:session_autoload = 'no'
-let g:session_autosave = 'no'
-
-
-
+for f in split(glob('~/.config/nvim/pluginconfig/*.vim'), '\n')
+  exe 'source' f
+endfor
