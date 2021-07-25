@@ -37,8 +37,12 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'dunckr/vim-monokai-soda'
 Plug 'vim-airline/vim-airline'
-Plug 'OmniSharp/omnisharp-vim'
+" Debugger 
+Plug 'puremourning/vimspector'
+
+"" CONFIG FOR LINTER OUTPUT
 Plug 'dense-analysis/ale'
+Plug 'mattn/vim-ale-icons'
 Plug 'heavenshell/vim-jsdoc', { 
   \ 'for': ['javascript', 'javascript.jsx','typescript'], 
   \ 'do': 'make install'
@@ -54,10 +58,13 @@ Plug 'Yggdroot/indentLine'
 Plug 'sheerun/vim-polyglot'
 Plug 'jiangmiao/auto-pairs'
 
+Plug 'vim-test/vim-test'
+
 " Golang stuff
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries'  } " Completion and stuff
 Plug 'sebdah/vim-delve'
 
+Plug 'OmniSharp/omnisharp-vim'
 
 Plug 'ryanoasis/vim-devicons'
 if isdirectory('/usr/bin/fzf')
@@ -73,8 +80,7 @@ endif
 Plug 'Shougo/vimproc.vim', {'do': g:make}
 
 "" Vim-Session
-Plug 'xolox/vim-misc'
-Plug 'xolox/vim-session'
+Plug 'tpope/vim-obsession'
 
 "" NICE TITLE SCREEN
 Plug 'mhinz/vim-startify'
