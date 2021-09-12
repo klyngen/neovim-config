@@ -9,6 +9,10 @@ map <S-F12> <Plug>(coc-implementation)
 map <a-cr> :CocCommand actions.open <CR>
 map <F3> :Rg <CR>
 map <F4> :GFiles <CR>
+map <F5> :call vimspector#Launch()<CR>
+map <F10> <Plug>VimspectorStepOver
+map <F11> <Plug>VimspectorStepInto
+map <F8> <Plug>VimspectorToggleBreakpoint
 
 set ts=2
 set shiftwidth=2
