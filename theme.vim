@@ -26,6 +26,7 @@ let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#ale#enabled = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tagbar#enabled = 1
+let g:airline#extensions#tabline#show_buffers = 0
 let g:airline_skip_empty_sections = 1
 
 " vim-airline
@@ -61,3 +62,30 @@ let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 " Wildmenu
 set wildmode=list:longest
 set hidden
+
+let s:currentTheme='dark'
+
+function! s:darkTheme()
+  colorscheme ayu
+  let g:airline_theme = 'jellybeans'
+  set background=dark
+  let s:currentTheme='dark'
+endfunction
+
+function! s:lightTheme()
+  colorscheme PaperColor
+  let g:airline_theme='papercolor'
+  set background=light
+  let s:currentTheme='light'
+endfunction
+
+function! s:toggleTheme()
+  if s:currentTheme == 'dark'
+    call s:lightTheme()
+  else
+    call s:darkTheme()
+  endif
+endfunction
+
+command! ToggleTheme call s:toggleTheme()
+

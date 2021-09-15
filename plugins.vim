@@ -35,8 +35,11 @@ Plug 'ayu-theme/ayu-vim'
 Plug 'zefei/simple-dark'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
+
+" THEMES
 Plug 'dunckr/vim-monokai-soda'
 Plug 'vim-airline/vim-airline'
+Plug 'NLKNguyen/papercolor-theme'
 " Debugger 
 Plug 'puremourning/vimspector'
 
